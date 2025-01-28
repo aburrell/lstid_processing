@@ -1,0 +1,78 @@
+[build-system]
+requires = ["oldest-supported-numpy", "setuptools >= 38.6", "pip >= 10"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cindi_tids"
+version = "0.0.1"
+license = {file = "LICENSE"}
+description = 'Identify TIDs in CINDI data'
+maintainers = [
+    {name = "Angeline G. Burrell", email = "angeline.g.burrell.civ@us.navy.mil"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "cmocean",
+    "matplotlib",
+    "numpy",
+    "pysat",
+    "pysatNASA",
+    "scipy"
+]
+readme = "README.md"
+keywords = [
+    "travelling ionospheric disturbances",
+    "traveling ionospheric disturbances",
+    "TIDs",
+    "C/NOFS",
+    "pysat",
+    "ionosphere",
+    "atmosphere",
+    "thermosphere",
+    "CINDI",
+    "heliosphere",
+    "observations",
+    "space",
+    "satellites",
+    "analysis",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+]
+
+[project.optional-dependencies]
+doc = [
+    "numpydoc",
+    "pyproject_parser",
+    "pysat>=3.2.1",
+    "sphinx>=1.3",
+    "sphinx-rtd-theme",
+]
+test = [
+     "coverage[toml]",
+     "flake8",
+     "packaging",
+     "requests",
+]
+
+[project.urls]
+source = "https://github.com/aburrell/cindi_tids"
+documentation = "https://cindi_tids.readthedocs.io/en/latest/"
+tracker = "https://github.com/aburrell/cindi_tids/issues"
+download = "https://github.com/aburrell/cindi_tids/releases"
