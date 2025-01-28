@@ -1,0 +1,11 @@
+graft cindi_tids/tests/test_data
+graft cindi/map_files
+
+include *.rst
+include *.md
+include LICENSE
+
+include *.cfg
+include *.toml
+include *.yml
+include .zenodo.json
