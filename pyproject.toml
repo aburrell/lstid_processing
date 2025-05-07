@@ -3,10 +3,10 @@ requires = ["oldest-supported-numpy", "setuptools >= 38.6", "pip >= 10"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cindi_tids"
+name = "lstid_processing"
 version = "0.0.1"
 license = {file = "LICENSE"}
-description = 'Identify TIDs in CINDI data'
+description = 'Identify TIDs in CINDI and process SAMI3 data'
 maintainers = [
     {name = "Angeline G. Burrell", email = "angeline.g.burrell.civ@us.navy.mil"},
 ]
@@ -15,9 +15,11 @@ dependencies = [
     "cmocean",
     "matplotlib",
     "numpy",
+    "pandas",
     "pysat",
     "pysatNASA",
-    "scipy"
+    "scipy",
+    "xarray"
 ]
 readme = "README.md"
 keywords = [
@@ -30,6 +32,7 @@ keywords = [
     "atmosphere",
     "thermosphere",
     "CINDI",
+    "SAMI3",
     "heliosphere",
     "observations",
     "space",
@@ -41,7 +44,6 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Atmospheric Science",
     "Topic :: Scientific/Engineering :: Physics",
-    "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -58,6 +60,7 @@ classifiers = [
 
 [project.optional-dependencies]
 doc = [
+    "myst_parser",
     "numpydoc",
     "pyproject_parser",
     "pysat>=3.2.1",
@@ -72,7 +75,7 @@ test = [
 ]
 
 [project.urls]
-source = "https://github.com/aburrell/cindi_tids"
-documentation = "https://cindi_tids.readthedocs.io/en/latest/"
-tracker = "https://github.com/aburrell/cindi_tids/issues"
-download = "https://github.com/aburrell/cindi_tids/releases"
+source = "https://github.com/aburrell/lstid_processing"
+documentation = "https://lstid_processing.readthedocs.io/en/latest/"
+tracker = "https://github.com/aburrell/lstid_processing/issues"
+download = "https://github.com/aburrell/lstid_processing/releases"
