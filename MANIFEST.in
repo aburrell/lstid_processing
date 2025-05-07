@@ -1,5 +1,5 @@
-graft cindi_tids/tests/test_data
-graft cindi/map_files
+graft lstid_processing/model_runs
+graft lstid_processing/map_files
 
 include *.rst
 include *.md
