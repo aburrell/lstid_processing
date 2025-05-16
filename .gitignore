@@ -7,6 +7,7 @@
 
 # Test directories and files
 /build/
+docs/autoapi/
 .tox
 .coverage
 coverage.xml
