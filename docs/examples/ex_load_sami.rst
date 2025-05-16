@@ -4,7 +4,7 @@ Load Model Data
 ===============
 
 The SAMI3 data included in this package is located in the directory specified
-by the variable :py:var:`lstid_processing.model_run_dir`.  To load this data::
+by the variable :py:attr:`lstid_processing.model_run_dir`.  To load this data::
 
   import lstid_processing
   import os
