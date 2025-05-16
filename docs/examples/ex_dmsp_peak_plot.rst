@@ -4,9 +4,10 @@ Identify and Plot the TID Maxima and Minima
 ===========================================
 
 This example recreates Figure 13 from the manuscript this repository supports.
-It uses the model run loaded in :ref:`ex-load`
+It uses the model run loaded in :ref:`ex-load`.
 
 ::
+   
    import datetime as dt
    import numpy as np
    import lstid_processing.model as lsmod
