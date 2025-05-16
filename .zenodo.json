@@ -18,13 +18,13 @@
 	"observations",
 	"space",
 	"satellites",
-	"analysis",
+        "analysis"
     ],
     "creators": [
       {
-        "orcid": "0000-0001-8875-9326", 
-        "affiliation": "Naval Research Laboratory", 
-        "name": "Angeline G. Burrell"
+          "orcid": "0000-0001-8875-9326", 
+          "affiliation": "Naval Research Laboratory", 
+          "name": "Angeline G. Burrell"
       }
     ]
 }
