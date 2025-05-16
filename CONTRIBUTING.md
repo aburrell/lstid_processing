@@ -1,4 +1,3 @@
-============
 Contributing
 ============
 
@@ -6,14 +5,14 @@ Bug reports are greatly appreciated! Requests for larger changes will likely
 take place on a longer timescale.&
 
 Short version
-=============
+-------------
 
 * Submit bug reports and feature requests at
   `GitHub <https://github.com/aburrell/lstid_processing/issues>`_
 * Make pull requests to the ``develop`` branch
 
 Bug reports
-===========
+-----------
 
 When `reporting a bug <https://github.com/aburrell/lstid_processing/issues>`_
 please include:
@@ -23,7 +22,7 @@ please include:
 * Detailed steps to reproduce the bug
 
 Feature requests and feedback
-=============================
+-----------------------------
 
 The best way to send feedback is to file an issue at
 `GitHub <https://github.com/aburrell/lstid_processing/issues>`_.
@@ -36,7 +35,7 @@ If you are proposing a feature:
   are welcome :)
 
 Development
-===========
+-----------
 
 To set up `lstid_processing` for local development:
 
