@@ -19,7 +19,7 @@ and for the Space Physics community.
  ============== =================
   cmocean       pysat
   matplotlib    pysatNASA
-  numpy         aacgmv2
+  numpy         
   pandas
   scipy
   xarray
