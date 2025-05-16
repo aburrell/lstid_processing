@@ -4,8 +4,9 @@
 Welcome to the lstid_processing documentation
 =============================================
 
-This documentation describes the pyIntensityFeatures module, which contains
-routines to identify features in imager intensity data.
+This documentation describes the :py:mod:`lstid_processing` module, which
+contains routines to analyse travelling ionospheric and atmospheric disturbances
+in C/NOFS CINDI, DMSP, and SAMI3 data.
 
 .. toctree::
    :maxdepth: 2
@@ -20,8 +21,9 @@ routines to identify features in imager intensity data.
    acknowledgements.rst
 
 
-.. admonition:: DISTRIBUTION STATEMENT A: Approved for public release.
-                Distribution is unlimited.
+.. admonition:: DISTRIBUTION STATEMENT A:
+
+    Approved for public release. Distribution is unlimited.
 
 
 
