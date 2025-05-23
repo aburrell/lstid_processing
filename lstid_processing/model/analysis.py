@@ -297,7 +297,7 @@ def find_linear_breaks(sami, nlind, nfind, nzinds, peak_ind, lat_break=6.0,
 
         # Get the latitude break indices
         lat_break_inds[dkey] = np.where((lat_diff > lat_break)
-                                   | (sec_diff > sec_break))[0] + 1
+                                        | (sec_diff > sec_break))[0] + 1
 
     return peak_lat, peak_sec, lat_break_inds
 
