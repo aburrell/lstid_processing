@@ -9,8 +9,6 @@
 
 import logging
 from importlib import metadata
-from importlib import resources
-import os.path as _op
 
 # Define a logger object to allow easier log handling
 logging.raiseExceptions = False
@@ -24,6 +22,3 @@ from lstid_processing import smoothing  # noqa F401
 
 # Define the global variables
 __version__ = metadata.version('lstid_processing')
-
-# Define the model r_os.path.join(
-model_run_dir =  _op.join(resources.files(__package__), 'model_runs')
