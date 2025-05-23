@@ -576,9 +576,10 @@ def get_plot_tid_peaks(sami, nt_start, nt_stop, nlind, nfind, nzinds,
         dat_keys = ["_".join([dkey, dat_keys]) for dkey in [
             'rel_vnq', 'rel_dene', 'rel_vsi2']]
         dat_scale = [100.0, 1.0, 100.0]
-        dat_labels = ['$\Delta$ u$_{||}$\nGeo Lat ($^\circ$N)',
-                      '$\Delta N_e/N_e$\nGeo Lat ($^\circ$N)',
-                      '$\Delta$ v$_{{||}_{O^+}}$\nGeo Lat ($^\circ$N)']
+        dat_labels = ['\n'.join([r'$\Delta$ u$_{||}$', r'Geo Lat ($^\circ$N)']),
+                      '\n'.join([r'$\Delta N_e/N_e$', r'Geo Lat ($^\circ$N)']),
+                      '\n'.join([r'$\Delta$ v$_{{||}_{O^+}}$',
+                                 r'Geo Lat ($^\circ$N)'])]
 
     if None in [dat_scale, dat_labels, peak_heights]:
         raise ValueError('must provide dat_scale, dat_labels, and peak_heights')
