@@ -10,8 +10,11 @@
 import datetime as dt
 import numpy as np
 import os
+import requests
+from time import sleep
 import xarray as xr
 
+from lstid_processing import logger
 from lstid_processing.smoothing.filter_rout import rel_data_butter
 
 
@@ -227,3 +230,73 @@ def load_concat_file(filename):
     sami['datetime'] = (('num_times'), sami_times)
 
     return sami
+
+
+def download_nrl_files(outdir, filename=None,
+                       nrl_site='https://map.nrl.navy.mil/map/pub/nrl/lstid'):
+    """Download SAMI3 files from the public NRL directory.
+
+    Parameters
+    ----------
+    outdir : str
+        Directory to which data will be saved
+    filename : str or NoneType
+        Desired file to download or None to get all of them (default=None)
+    nrl_site : str
+        URL hosting the SAMI3 files
+        (default='https://map.nrl.navy.mil/map/pub/nrl/lstid')
+
+    Returns
+    -------
+    model_names : list
+        List of model run names with their destination directory
+
+    Raises
+    ------
+    ValueError
+        If `outdir` does not exist.
+
+    """
+    model_names = list()
+
+    # Test the output directory
+    if not os.path.isdir(outdir):
+        raise ValueError('Bad output directory: {:}'.format(outdir))
+
+    # Build the download filenames
+    if filename is None:
+        remote_names = ["fejer_sami3_rel_2014084_85.nc",
+                        "model_description.txt",
+                        "oneway_sami3_rel_w_hmf2_nmf2_2014084_85.nc",
+                        "sami_diagh_oneway_2014084_85_rel_max.nc",
+                        "sami_nohpopcoll_f1_f2_f3_2014084_85_rel_max.nc",
+                        "twoway_sami3_f2_2014084_85.nc"]
+    else:
+        remote_names = [filename]
+
+    # Cycle through each remote file and download it to the target directory
+    for rfile in remote_names:
+        # Build the URL
+        url = "/".join([nrl_site, rfile])
+
+        # Build the output filename
+        ofile = os.path.join(outdir, rfile)
+
+        # Perform the download
+        try:
+            with requests.get(url) as req:
+                if req.status_code != 404:
+                    with open(ofile, 'wb') as fin:
+                        fin.write(req.content)
+                    logger.info('Successfully downloaded: {:}'.format(ofile))
+                    model_names.append(ofile)
+                else:
+                    logger.info('Remote file unavailable: {:}'.format(url))
+        except requests.exceptions.RequestException as err:
+            logger.info(''.join([str(err), ' - File: "', rfile,
+                                 '" is not available']))
+
+        # Pause to avoid excessive pings to the server
+        sleep(0.2)
+
+    return model_names
