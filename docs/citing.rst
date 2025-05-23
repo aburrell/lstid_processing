@@ -11,6 +11,7 @@ pyIntensityFeatures
 
 The most recent citation can be found at Zenodo. The examples here is from the
 first public release.  A journal article describing this method is forthcoming.
+When using the model runs, please cite the journal article.
 
 * Burrell, A. G., et al. (2025).
   lstid_processing: Alpha Release (Version 0.0.1).
