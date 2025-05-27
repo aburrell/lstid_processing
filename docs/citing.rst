@@ -13,15 +13,15 @@ The most recent citation can be found at Zenodo. The examples here is from the
 first public release.  A journal article describing this method is forthcoming.
 When using the model runs, please cite the journal article.
 
-* Burrell, A. G., et al. (2025).
-  lstid_processing: Alpha Release (Version 0.0.1).
+* Burrell, A. G., (2025). aburrell/lstid_processing: v0.0.1.
 
 .. code-block:: latex
    
-    @Misc{pyIntensityFeatures,
+    @Misc{lstidcode,
           author = {Burrell, A. G.},
-	  title  = {lstid_processing: Alpha Release},
+	  title  = {aburrell/lstid\_processing: v0.0.1},
   	  year   = {2025},
-	  date   = {2025-06-01},
+	  publisher = {Zenodo},
+	  doi   = {10.5281/zenodo.15528276},
 	  version = {v0.0.1},
 	  }
