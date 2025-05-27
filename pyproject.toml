@@ -61,12 +61,12 @@ classifiers = [
 
 [project.optional-dependencies]
 doc = [
-    "autoapi",
     "myst_parser",
     "numpydoc",
     "pyproject_parser",
     "pysat>=3.2.1",
     "sphinx>=1.3",
+    "sphinx-autoapi",
     "sphinx-rtd-theme",
 ]
 test = [
