@@ -233,7 +233,7 @@ def load_concat_file(filename):
 
 
 def download_nrl_files(outdir, filename=None,
-                       nrl_site='https://map.nrl.navy.mil/map/pub/nrl/lstid'):
+                       nrl_site='https://map.nrl.navy.mil/map/pub/nrl/lstids/'):
     """Download SAMI3 files from the public NRL directory.
 
     Parameters
@@ -244,7 +244,7 @@ def download_nrl_files(outdir, filename=None,
         Desired file to download or None to get all of them (default=None)
     nrl_site : str
         URL hosting the SAMI3 files
-        (default='https://map.nrl.navy.mil/map/pub/nrl/lstid')
+        (default='https://map.nrl.navy.mil/map/pub/nrl/lstids')
 
     Returns
     -------
