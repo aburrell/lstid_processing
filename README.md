@@ -4,7 +4,7 @@ Forecasting System (C/NOFS) Coupled Ion-Neutral Dynamics Investigation (CINDI)
 Ion Velocity Meter (IVM) data, tools for working with SAMI3 runs, and a routine
 to obtain model runs used for a LSTID case study are provided.
 
-[![DOI](https://zenodo.org/badge/989170648.svg)](https://doi.org/10.5281/zenodo.15528276) [PYPI HERE] [![Documentation Status](https://readthedocs.org/projects/lstid-processing/badge/?version=latest)](https://lstid-processing.readthedocs.io/en/latest/?badge=latest)
+[![DOI](https://zenodo.org/badge/989170648.svg)](https://doi.org/10.5281/zenodo.15528276) [![PyPI version](https://badge.fury.io/py/lstid_processing.svg)](https://badge.fury.io/py/lstid_processing) [![Documentation Status](https://readthedocs.org/projects/lstid-processing/badge/?version=latest)](https://lstid-processing.readthedocs.io/en/latest/?badge=latest)
 
 
 Example

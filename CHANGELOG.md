@@ -8,6 +8,7 @@ Summary of all changes made since the first release
 * Updated remote destination for model files
 * Added GitHub templates
 * Added basic CI for PEP8, docs, and installation success
+* Updated PyPi badge
 
 0.0.1 (27-05-2025)
 ------------------
