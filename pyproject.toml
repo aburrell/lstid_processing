@@ -61,6 +61,7 @@ classifiers = [
 
 [project.optional-dependencies]
 doc = [
+    "autoapi",
     "myst_parser",
     "numpydoc",
     "pyproject_parser",
