@@ -33,4 +33,6 @@ jobs:
     - name: Check that installation imports correctly
       run: |
         cd ..
+        mkdir pysatData
+        python -c "import pysat; pysat.params['data_dirs'] = 'pysatData'"
         python -c "import lstid_processing; print(lstid_processing.__version__)"
