@@ -21,7 +21,8 @@ sami3_files = lstid_processing.model.io.download_nrl_files('path/to/downloads')
 Notes
 -----
 
-This package and data are supplied to support the reproducibility of a
-manuscript currently under review.  Frequent updates are not expected.
+This package and data are supplied to support the reproducibility of
+Burrell et al., (2026) doi:10.1029/2025JA034335. Frequent updates are not
+expected.
 
 

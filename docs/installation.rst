@@ -11,7 +11,7 @@ The following instructions will allow you to install ``lstid_processing``
 Prerequisites
 -------------
 
-pyIntensityFeatures uses common Python modules, as well as modules developed by
+lstid_processing uses common Python modules, as well as modules developed by
 and for the Space Physics community.
 
  ============== =================
@@ -37,7 +37,7 @@ Installation Options
 
 PyPi
 ^^^^
-All public pyIntensityFeatures releases will be made available through the
+All public lstid_processing releases will be made available through the
 PyPi package manager at a future time.
 ::
 
@@ -56,10 +56,10 @@ You can keep up to date with the latest changes at the git repository.
 ::
 
 
-   git clone https://github.com/PACKAGE_REPOSITORY
+   git clone https://github.com/aburrell/lstid_processing.git
 
 
-2. Install pyIntensityFeatures:
+2. Install lstid_processing:
    Change directories into the repository folder and run the pyproject.toml
    file. There are a few ways you can do this:
 
