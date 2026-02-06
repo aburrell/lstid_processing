@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lstid_processing"
-version = "0.0.1"
+version = "0.0.2"
 license = {file = "LICENSE"}
 description = 'Identify TIDs in CINDI and process SAMI3 data'
 maintainers = [
@@ -70,10 +70,7 @@ doc = [
     "sphinx-rtd-theme",
 ]
 test = [
-     "coverage[toml]",
      "flake8",
-     "packaging",
-     "requests",
 ]
 
 [project.urls]
